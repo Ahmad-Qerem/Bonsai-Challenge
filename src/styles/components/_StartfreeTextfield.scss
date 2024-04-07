@@ -1,0 +1,16 @@
+.start-free-textfield {
+  display: flex;
+  height: 70px;
+  input {
+    padding: 8px 10px 8px 28px;
+    border: 2px solid $primary;
+    border-radius: 4px 0 0 4px;
+  }
+
+  button {
+    border-radius: 0 4px 4px 0;
+    border: 2px solid $primary;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}

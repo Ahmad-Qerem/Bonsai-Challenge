@@ -13,6 +13,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        primary: "#00b289",
+        "primary-dark": "#00a37e",
+        dark: "#4c4d5f",
+        yellow: "#f8db62",
+      },
+      maxWidth: {
+        "22-char": "22ch",
+      },
+      fontFamily: {
+        amerigo: ["var(--font-amerigo)", "sans-serif"],
+      },
     },
   },
   plugins: [],
