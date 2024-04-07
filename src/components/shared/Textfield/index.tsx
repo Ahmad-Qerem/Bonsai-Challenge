@@ -3,16 +3,11 @@ import { useField } from "formik";
 
 interface TextfieldProps {
   label?: string;
-  name?: string;
-  withValidation?: boolean;
+  name: string;
 }
 
-const Textfield: React.FC<TextfieldProps> = ({
-  label,
-  name,
-  withValidation = false,
-}) => {
-  const [field, meta] = withValidation ? useField(name) : [{}, {}];
+const Textfield: React.FC<TextfieldProps> = ({ label, name }) => {
+  const [field, meta] = useField(name);
 
   return (
     <div className="input-field  mb-3">
@@ -22,13 +17,11 @@ const Textfield: React.FC<TextfieldProps> = ({
         </label>
       )}
       <input
-        className={`${
-          withValidation && meta.touched && meta.error ? "is-invalid" : ""
-        }`}
+        className={`${meta.touched && meta.error ? "is-invalid" : ""}`}
         id={name}
-        {...(withValidation ? field : {})}
+        {...field}
       />
-      {withValidation && meta.touched && meta.error && (
+      {meta.touched && meta.error && (
         <div className="text-danger text-nowrap" style={{ height: 16 }}>
           {meta.error}
         </div>
