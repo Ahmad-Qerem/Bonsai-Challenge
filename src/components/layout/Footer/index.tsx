@@ -221,7 +221,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="container flex justify-around">
+    <div className="container flex justify-around pb-20">
       <div>
         <FooterMenu title="Product" items={productGroup1} />
         <div className="mt-7">

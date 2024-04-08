@@ -24,7 +24,7 @@ const FooterMenu: React.FC<FooterMenuProps> = ({ title, items }) => {
   };
 
   return (
-    <div className="footer">
+    <div >
       {title && <h3 className="uppercase font-bold mb-10">{title}</h3>}
       <ul className="font-extralight leading-9">
         {items.map((item, index) => {
