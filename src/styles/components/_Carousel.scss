@@ -1,0 +1,14 @@
+// styles/carousel.scss
+
+.carousel {
+  .control-dots {
+    .dot {
+      box-shadow: none !important;
+      background-color: rgba(76, 77, 95, 0.13) !important;
+    }
+
+    .dot.selected {
+      background-color: #01b289 !important;
+    }
+  }
+}

@@ -24,9 +24,9 @@ const FooterMenu: React.FC<FooterMenuProps> = ({ title, items }) => {
   };
 
   return (
-    <div>
-      {title && <h3>{title}</h3>}
-      <ul>
+    <div className="footer">
+      {title && <h3 className="uppercase font-bold mb-10">{title}</h3>}
+      <ul className="font-extralight leading-9">
         {items.map((item, index) => {
           return (
             <li key={`link-${index}`}>

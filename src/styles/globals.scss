@@ -5,7 +5,9 @@
 @import "components/Textfield";
 @import "components/StartfreeTextfield";
 @import "components/HomePage";
-
+@import "components/Tabs";
+@import "components/Footer";
+@import "components/Carousel";
 :root  {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -23,6 +25,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: white;
+  overflow-x: hidden;
 }
 .container {
   margin-left: auto;

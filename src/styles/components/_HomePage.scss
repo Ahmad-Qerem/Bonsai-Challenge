@@ -3,9 +3,69 @@
   height: 80vw;
   position: absolute;
   top: -88%;
-  right: -26%;
+  right: -66%;
   z-index: -1;
   border-radius: 7vw;
   background-color: #f2faff;
   transform: rotate(-23deg);
+}
+
+.colored-bg-box-2 {
+  top: 28%;
+  z-index: -1;
+  position: absolute;
+  left: 57%;
+  width: 80%;
+  height: 90%;
+  border-radius: 94px;
+  background-color: #fff5e8;
+  -webkit-transform: rotate(-21deg);
+  -ms-transform: rotate(-21deg);
+  transform: rotate(-21deg);
+}
+
+.make-more-wrapper {
+  margin-top: 6rem;
+  position: relative;
+}
+
+.start-free-wrapper {
+  background-color: #f2faff;
+  padding: 4rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
+  border-radius: 1rem;
+}
+.review-wrapper {
+  position: relative;
+  width: 48%;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 60px 0 rgba(2, 4, 69, 0.06);
+  min-height: 430px;
+  max-width: 470px;
+  margin-block: 3rem;
+  padding: 155px 1rem 64px 1rem;
+  text-align: left;
+  .user-image-wrapper {
+    position: absolute;
+    z-index: 2;
+    top: -20%;
+    left: 0;
+    display: flex;
+    gap:2rem;
+    align-items: end;
+    .user-pic {
+      border-radius: 0 50px;
+      width:160px ;
+      height: 200px;
+      object-fit: cover;
+    }
+    .comma{
+      width: 48px;
+      height: 36px;
+    }
+  }
 }

@@ -224,18 +224,25 @@ const Footer = () => {
     <div className="container flex justify-around">
       <div>
         <FooterMenu title="Product" items={productGroup1} />
-        <FooterMenu items={productGroup2} />
+        <div className="mt-7">
+          <FooterMenu items={productGroup2} />
+        </div>
       </div>
       <div>
         <div>
           <FooterMenu title="Free Resources" items={freeRecoursesGroup1} />
           <FooterMenu items={freeRecoursesGroup2} />
         </div>
-        <FooterMenu title="Templates" items={templatesGroup} />
+        <div className="mt-7">
+          <h3>Templates</h3>
+          <FooterMenu items={templatesGroup} />
+        </div>
       </div>
       <div>
         <FooterMenu title="Bonsai" items={bonsaiGroup1} />
-        <FooterMenu items={bonsaiGroup2} />
+        <div className="mt-7 mb-7">
+          <FooterMenu items={bonsaiGroup2} />
+        </div>
         <FooterMenu items={bonsaiGroup3} />
       </div>
     </div>
