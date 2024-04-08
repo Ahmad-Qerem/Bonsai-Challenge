@@ -16,7 +16,7 @@ const EverythingYouNeed = () => {
           Everything you need to run your business.
         </h1>
         <p className="mt-6">
-          Bonsai’s all-in-one product suite with smart automation lets you focus
+          Bonsai &apos; s all-in-one product suite with smart automation lets you focus
           on your passion, not your paperwork.
         </p>
         <StartFreeTextfield />
@@ -295,7 +295,7 @@ const Reviews = () => {
   ];
   return (
     <div className="mt-16">
-      <h1 className="text-center text-4xl">Don't just take it from us.</h1>
+      <h1 className="text-center text-4xl">Don&apos;t just take it from us.</h1>
       <Carousel>
         <div className="flex justify-center mt-20 gap-6">
           {commentsGroup1.map((user) => {
